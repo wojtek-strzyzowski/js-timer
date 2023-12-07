@@ -1,0 +1,153 @@
+/* style.css */
+
+/* Stil für den Header */
+/* style.css */
+
+/* Stil für den Header mit Slide-Effekt */
+
+header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #333; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Slide-Effekt Animation für den Header */
+  .background-container {
+    background-image: url('radio.jpg'); /* Ersetze 'path/to/your/background-image.jpg' mit dem tatsächlichen Pfad zu deinem Bild */
+    background-size: cover; /* Hintergrundbild abdecken */
+    background-position: center; /* Zentrieren Sie das Hintergrundbild */
+    background-repeat: no-repeat; /* Wiederholung des Hintergrundbilds deaktivieren */
+    min-height: 100vh; /* Mindesthöhe des Bildschirms */
+}
+
+body {
+  font-family: "Orbitron";
+}
+  
+  
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+  header {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  
+  /* Stil für das Hauptcontainer */
+  main {
+    text-align: center;
+  }
+  
+  /* Stil für das Countdown-Formular */
+  #timeForm {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: rgb(8, 34, 180);
+    font-weight:bolder;
+  }
+  
+  button {
+    background-color: #b86d06d1; /* Ändere die Farbe nach deinem Geschmack */
+    color: rgb(8, 34, 180);
+    font-weight:bolder;    
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Stil für die Karten */
+  .card {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  .card-title {
+    font-size: 27px;
+    margin-bottom: 0;
+    color: rgb(8, 34, 180);
+    font-weight:bolder;
+  }
+  
+  /* Animation für die Karten */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .card {
+    animation: fadeIn 3s ease-out;
+  }
+  
+  /* Schatten für Hover-Effekt */
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(172, 48, 13, 0.932);
+  }
+  
+  /* Farbe für Countdown-Karten */
+  .custom-gold {
+    background-color: #b86d06d1; /* Ändere die Farbe nach deinem Geschmack */
+  }
+  
+  /* Stil für den Timer-Text */
+  #timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Stil für den Zeit-Container */
+  .container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* Animation für den Zeit-Container */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .container {
+    animation: pulse 1s infinite;
+  }
+  
+  h2{
+    color: rgb(8, 34, 180);
+    font-weight:bolder;
+  }
+
+
+
