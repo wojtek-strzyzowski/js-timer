@@ -31,8 +31,13 @@ function countDown() {
     hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  } 
+  if (distance < 0) {
+    alert ("Die angegebene Zeit liegt in der Vergangenheit!! Du depp!!")
+    location.reload();
   }
-    
+  
+ 
 
 
   // Update the "Tage"-Card with the remaining days
@@ -86,16 +91,4 @@ function startTimer() {
 
 function pauseTimer() {
     clearInterval(timer);
-}
-
-function resetTimer() {
-    clearInterval(timer);
-    timerDisplay.innerHTML = "00:00:00";
-    hoursInput.value = 0;
-    minutesInput.value = 0;
-    secondsInput.value = 0;
-}
-
-function formatTime(time) {
-    return time < 10 ? "0" + time : time;
 }
